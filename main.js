@@ -1,11 +1,11 @@
 const apiKey = '789019a0'; // almacenando clave para obtener la data de la web OMDb API
 
-const baseURL = 'http://www.omdbapi.com/?apikey='+apiKey;
+const baseURL = 'http://www.omdbapi.com/?apikey=' + apiKey;
 // almacenando en una constante la base de la URL mas la key para poder acceder al JSON
 
-const searchMovies = async (searchBy,page) => {//creando una función para obtener las peliculas por titulo
+const searchMovies = async (searchBy, page) => {//creando una función para obtener las peliculas por titulo
 
-const url = baseURL + '&s='+searchBy+'&p='+page; //agregando parametros a la url
+  const url = baseURL + '&s=' + searchBy + '&p=' + page; //agregando parametros a la url
 
   const response = await fetch(url); //obteniendo la data json de forma asíncrona
 
@@ -14,4 +14,4 @@ const url = baseURL + '&s='+searchBy+'&p='+page; //agregando parametros a la url
   console.log(json);
 }
 
-searchMovies("monster",2)
+searchMovies('action', 2)
