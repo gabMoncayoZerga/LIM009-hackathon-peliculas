@@ -6,6 +6,14 @@ body{
   min-height: 100%;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 /* SLIDESHOW */
 @keyframes cambio {
   0%{ margin-left: 0;}
