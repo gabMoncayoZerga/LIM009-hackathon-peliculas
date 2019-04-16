@@ -21,28 +21,42 @@ startButton.addEventListener("click",()=>{
 });
 
 const movies = document.getElementById('movies');
+
 const apiKey = '789019a0';
 const baseURL = 'http://www.omdbapi.com/?apikey='+apiKey;
 
 const searchMovies = async(searchBy,page) => {
 const url = baseURL +'&s='+ searchBy +'&page='+ page;
-    const response = await fetch(url);
-    const json = await response.json();
-    const result = JSON.parse(JSON.stringify(json));
-    return result.Search;
+   const response = await fetch(url);
+   const json = await response.json();
+   return json.Search;
+   }
+
+   const printData = (data) => {
+       let string = '';
+       data.forEach(movie => {
+           string += `<div>
+           <p>Title:${movie.Title}</p>
+           <p>Tipo: ${movie.Type}</p>
+           <img src="${movie.Poster}" alt="poster">
+           </div>`
+       })
+       return document.getElementById('movies').innerHTML = string;
+    };
+
+  const selectOption = () => {
+    let word = select.value;
+    switch(word) {
+      case 'Matar':
+        searchMovies('kill',1).then(data => printData(data))
+      break;
+      case 'Guerra':
+        searchMovies('war',1).then(data => printData(data))
+      break;
+      case 'Humor':
+        searchMovies('comedy',1).then(data => printData(data));
+      break;
     }
+  }
 
-    const printData = data => {
-        let string = '';
-        for(let movie = 0; movie < data.length; movie++) {
-        string += `<div>
-        <p>Title:${movie.Title}</p>
-        <img src="${movie.Poster}" alt="poster">
-        </div>`
-        }
-        return movies.innerHTML = string;
-}
-
-searchMovies("acción",2);
-
-searchMovies("ficción",15);
+  select.addEventListener('change', selectOption);
