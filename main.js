@@ -15,12 +15,6 @@ const pages = (pageToShow) => {
    pageToShow.classList.remove('hide');
 }
 
-// startButton.style.display="block";
-// welcomePage.style.display="block"
-// select.style.display="none";
-// paragraph.style.display="none";
-// footer.style.display="block";
-
 const clickButtonStart = () => {
    pages(secondPage)
 };
