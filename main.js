@@ -1,17 +1,47 @@
-const apiKey = '789019a0'; // almacenando clave para obtener la data de la web OMDb API
+//ALMACENAMOS LAS SECCIONES EN CONSTANTES //
+const welcomePage=document.getElementById("welcome-page");
+const startButton= document.getElementById("start-button");
+const secondPage=document.getElementById("second-page");
+const paragraph=document.getElementById("paragraph");
+const select=document.getElementById("select");
+const footer =document.getElementById("footer");
 
-const baseURL = 'http://www.omdbapi.com/?apikey=' + apiKey;
-// almacenando en una constante la base de la URL mas la key para poder acceder al JSON
+startButton.style.display="block";
+welcomePage.style.display="block"
+select.style.display="none";
+paragraph.style.display="none";
+footer.style.display="block";
 
-const searchMovies = async (searchBy, page) => {//creando una función para obtener las peliculas por titulo
+startButton.addEventListener("click",()=>{
+  startButton.style.display="none";
+  welcomePage.style.display="none";
+  select.style.display="block";
+  paragraph.style.display="block";
+  footer.style.display="block";
+});
 
-  const url = baseURL + '&s=' + searchBy + '&p=' + page; //agregando parametros a la url
+const apiKey = '789019a0';
+const baseURL = 'http://www.omdbapi.com/?apikey='+apiKey;
 
-  const response = await fetch(url); //obteniendo la data json de forma asíncrona
+const searchMovies = async(searchBy,page) => {
+const url = baseURL +'&s='+ searchBy +'&page='+ page;
+   const response = await fetch(url);
+   const json = await response.json();
+   const result = JSON.parse(JSON.stringify(json));
+   return result.Search;
+   }
 
-  const json = await response.json();// convirtiendo la data a json, recien aca lo trato como json
+   const printData = data => {
+       let string = '';
+       data.forEach(movie => {
+           string += `<div>
+           <p>Title:${movie.Title}</p>
+           <img src="${movie.Poster}" alt="poster">
+           </div>`
+       })
+       return document.getElementById('movies').innerHTML = string;
+   }
 
-  console.log(json);
-}
 
-searchMovies('action', 2)
+
+   searchMovies('accion',1).then(data => printData(data));
