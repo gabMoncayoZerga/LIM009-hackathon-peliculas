@@ -29,31 +29,46 @@ const clickButtonSecondPage = () => {
    pages(secondPage)
 };
 
-const apiKey = '789019a0';
-const baseURL = 'http://www.omdbapi.com/?apikey=' + apiKey;
+const movies = document.getElementById('movies');
 
-const searchMovies = async (searchBy, page) => {
-   const url = baseURL + '&s=' + searchBy + '&page=' + page;
+const apiKey = '789019a0';
+const baseURL = 'http://www.omdbapi.com/?apikey='+apiKey;
+
+const searchMovies = async(searchBy,page) => {
+const url = baseURL +'&s='+ searchBy +'&page='+ page;
    const response = await fetch(url);
    const json = await response.json();
-   const result = JSON.parse(JSON.stringify(json));
-   return result.Search;
-}
+   return json.Search;
+   }
 
-const printData = data => {
-   let string = '';
-   data.forEach(movie => {
-      string += `<div>
+   const printData = (data) => {
+       let string = '';
+       data.forEach(movie => {
+           string += `<div>
            <p>Title:${movie.Title}</p>
+           <p>Tipo: ${movie.Type}</p>
            <img src="${movie.Poster}" alt="poster">
            </div>`
-   })
-   return document.getElementById('movies').innerHTML = string;
-}
+       })
+       return document.getElementById('movies').innerHTML = string;
+    };
 
+  const selectOption = () => {
+    let word = select.value;
+    switch(word) {
+      case 'Matar':
+        searchMovies('kill',1).then(data => printData(data))
+      break;
+      case 'Guerra':
+        searchMovies('war',1).then(data => printData(data))
+      break;
+      case 'Humor':
+        searchMovies('comedy',1).then(data => printData(data));
+      break;
+    }
+  }
 
-
-searchMovies('accion', 1).then(data => printData(data));
+  select.addEventListener('change', selectOption);
 
 startButton.addEventListener('click', clickButtonStart);
 secondPage.addEventListener('click', clickButtonSecondPage);
