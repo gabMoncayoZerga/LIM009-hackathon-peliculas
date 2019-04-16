@@ -66,3 +66,6 @@ const url = baseURL +'&s='+ searchBy +'&page='+ page;
 
 startButton.addEventListener('click', clickButtonStart);
 secondPage.addEventListener('click', clickButtonSecondPage);
+
+
+window.searchMovies = searchMovies;
