@@ -13,14 +13,6 @@
 
 ## Preámbulo
 
-Con la aparición de plataformas para ver películas en la nube, como Netflix o
-Hulu, ver películas desde donde estés, comiendo lo que quieras
-(sin tener que pagar precios ridículos por pop-corn / pipoca / palomitas /
-canchita / cabritas), parando si es necesario, teniendo acceso a una cantidad
-abrumadora de películas... ha cambiado la experiencia del usuario
-y modificado el mercado de las películas a nivel global.
-
- ![Pelis](https://media.giphy.com/media/NipFetnQOuKhW/giphy.gif)
 
 ## Resumen del proyecto
 
