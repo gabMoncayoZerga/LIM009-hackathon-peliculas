@@ -5,6 +5,18 @@ body{
   min-height: 100%;
 }
 
+
+.select-options{
+  font-size: 17px;
+  font-family: 'Rasa', serif;
+  width: 241px;
+  height: 30px;
+  border: 0;
+  border-radius: 7px;
+  background: darkred;
+  color: whitesmoke;
+}
+
 footer{
   margin: auto;
   position: absolute;
@@ -23,6 +35,7 @@ footer{
 }
 
 h1{
+  font-family: 'Press Start 2P', cursive;
   color: white;
 }
 
@@ -35,6 +48,14 @@ h2 {
   margin: auto;
   display: block;
   margin-top: 5%;
+  font-family: 'VT323', monospace;
+  background: #5DADE2;
+  border: 0;
+  border-radius: 15px;
+  width: 100px;
+  height: 44px;
+  font-size: 29px;
+  color: whitesmoke 
 }
 
 
