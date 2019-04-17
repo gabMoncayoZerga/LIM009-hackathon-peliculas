@@ -1,9 +1,20 @@
-
 body{
   background-color: #111;
   text-align: center;
   margin: auto;
   min-height: 100%;
+}
+
+
+.select-options{
+  font-size: 17px;
+  font-family: 'Rasa', serif;
+  width: 241px;
+  height: 30px;
+  border: 0;
+  border-radius: 7px;
+  background: darkred;
+  color: whitesmoke;
 }
 
 footer{
@@ -28,11 +39,27 @@ footer{
 }
 
 h1{
+  font-family: 'Press Start 2P', cursive;
   color: white;
 }
 
 h2 {
   color: #c8d6e5;
+}
+
+
+#start-button{
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+  font-family: 'VT323', monospace;
+  background: #5DADE2;
+  border: 0;
+  border-radius: 15px;
+  width: 100px;
+  height: 44px;
+  font-size: 29px;
+  color: whitesmoke
 }
 
 
@@ -172,10 +199,4 @@ header {
   color: #125688;
   background: #fefefe;
   border-color: #125688;
-}
-
-.button {
-  margin: auto;
-  display: block;
-  margin-top: 5%;
 }
