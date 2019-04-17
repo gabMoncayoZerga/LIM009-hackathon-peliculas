@@ -53,18 +53,48 @@ CINEMATIC es una aplicación web pensada para encontrar las mejores peliculas en
 
 ## Conclusiones
 
+#### Gráfico 1
+#### Gráfico 2
+#### Gráfico 3
+#### Gráfico 4
+#### Gráfico 5
+#### Gráfico 6
+#### Gráfico 7
+#### Gráfico 8
+
 ## Historias de usuario
+
+### Historia de usuario 1
+
+
+DEFINICION DE TERMINADO
+
+### Historia de usuario 2
+
+
+DEFINICION DE TERMINADO
+
+### Historia de usuario 3
+
+DEFINICION DE TERMINADO
 
 
 ## Prototipo baja fidelidad
 
+#### Primera Vista
 
+![primera](https://i.ibb.co/9vGXs2G/Whats-App-Image-2019-04-17-at-06-17-35-2.jpg)
+
+#### Segunda Vista
+
+![segunda](https://i.ibb.co/yNK08L2/Whats-App-Image-2019-04-17-at-06-17-35-1.jpg)
+
+#### Tercera Vista
+
+![tercera](https://i.ibb.co/7rVDDvW/Whats-App-Image-2019-04-17-at-06-17-35-3.jpg)
 
 ## Prototipo alta fidelidad
 
+Se adjunta link 
 
 ## Planning
-
-* Cada squad tendrá 5 minutos para presentar su demo y 5 minutos para recibir preguntas.
-
-* Las personas que presentan en la primera presentación no deben ser las mismas de la presentación final.
