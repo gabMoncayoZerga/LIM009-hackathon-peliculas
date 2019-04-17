@@ -8,6 +8,7 @@
 * [Historias de usuario](#historias-de-usuario)
 * [Prototipo baja fidelidad](#prototipo-baja-fidelidad)
 * [Prototipo alta fidelidad](#prototipo-alta-fidelidad)
+* [Testeo](#testeo)
 
  ***
 

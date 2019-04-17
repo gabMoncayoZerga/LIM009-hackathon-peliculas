@@ -56,7 +56,7 @@ const url = baseURL +'&s='+ searchBy +'&page='+ page;
   const selectOption = () => {
     let word = select.value;
     switch(word) {
-      case 'Matar':
+      case 'Acción':
         searchMovies('kill',1).then(data => printData(data))
       break;
       case 'Guerra':
