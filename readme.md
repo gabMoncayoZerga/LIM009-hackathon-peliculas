@@ -126,3 +126,32 @@ Mostraremos en pantalla la trama de la película al hacer click en cada poster.
 ## Prototipo alta fidelidad
 
 Se adjunta link
+
+https://www.figma.com/proto/f9KIXHGq3YxHwgVNxxznznf2/Untitled?node-id=0%3A1&scaling=min-zoom
+
+## Testeo
+
+### Usuario 1
+
+- Boton empezar se sobrepone al footer
+- Ubicar las peliculas de manera que aparezcan 3 por fila
+- Imagenes más pequeñas
+- Quisiera ver la sinopsis de la película
+- Buena combinación de colores
+- Me agrada el menú de navegación y slideshow
+
+### Usuario 2
+
+- Cambiar fuente de letras, es un poco recargada
+- Colores deberían estar relacionados con comedia y acción
+- Usar mínimo 3 columnas , porque al ser más películas la web sería infinita al buscarla
+- Quisiera ver mayor cantidad de películas
+
+
+### Usuario 3
+
+- Interfaz amigable
+- Entiendo la navegación
+- Quisiera ver un botón de regresar
+- Visualizar mayor información sobre la películas
+- Quisiera ver el trailer de las películas
