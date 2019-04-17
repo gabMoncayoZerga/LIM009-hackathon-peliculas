@@ -1,3 +1,4 @@
+
 body{
   background-color: #111;
   text-align: center;
@@ -14,6 +15,10 @@ footer{
   color: #c8d6e5
 }
 
+.info{
+  color: #b2bec3;
+}
+
 .show {
   display: block;
 }
@@ -28,13 +33,6 @@ h1{
 
 h2 {
   color: #c8d6e5;
-}
-
-
-#start-button{
-  margin: auto;
-  display: block;
-  margin-top: 5%;
 }
 
 
@@ -174,4 +172,10 @@ header {
   color: #125688;
   background: #fefefe;
   border-color: #125688;
+}
+
+.button {
+  margin: auto;
+  display: block;
+  margin-top: 5%;
 }

@@ -45,8 +45,8 @@ const url = baseURL +'&s='+ searchBy +'&page='+ page;
        let string = '';
        data.forEach(movie => {
            string += `<div>
-           <p>Title:${movie.Title}</p>
-           <p>Tipo: ${movie.Type}</p>
+           <p class="info">Title:${movie.Title}</p>
+           <p class="info">Tipo: ${movie.Type}</p>
            <img src="${movie.Poster}" alt="poster">
            </div>`
        })
